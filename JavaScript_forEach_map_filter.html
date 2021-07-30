@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       const fruit=['apple','baanana','orange','mango'];
+       //forEach 
+       fruit.forEach(function(fruit)
+       {
+            console.log(fruit);
+       });
+
+        
+        const student=[
+           {
+               id:1,
+               name:'A',
+               age:25,
+               gender:'M'
+           },
+           {
+               id:2,
+               name:'B',
+               age:26,
+               gender:'F'
+           },
+           {
+               id:3,
+               name:'C',
+               age:28,
+               gender:'F'
+           }
+       ];
+       //map
+       const studentId=student.map(function(student)//all student id as array
+       {
+           return student.id;
+       })
+       console.log(studentId);
+        //filter
+        const studentFemale=student.filter(function(student)
+        {
+            return student.gender==='F';//all female student
+        })
+        console.log(studentFemale);
+
+    </script>
+</body>
+</html>

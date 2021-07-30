@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       const person={
+
+        firstName:"Ruby",
+        lastName:"Aktar",
+        age:25,
+        hobbies:['music','reading','sports'],
+        address:{
+            street:'29',
+            city:'Dhaka',
+            area:'Uttor Badda'
+        }
+       }
+       console.log(person);
+       console.log("First hobby",person.hobbies[0]);
+       console.log("Area",person.address.area);
+       
+       //pooling out value
+       const{ firstName,lastName,address:{city}}=person;
+       console.log(firstName+" "+lastName+" lives in "+city);
+        //adding property
+        person.email="rubinaaktar872@gmail.com";
+        console.log(person.email);
+
+    </script>
+</body>
+</html>
